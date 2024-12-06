@@ -2,9 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --play: running;
+  --direction: normal;
+  --duration: 263.61421875s;
+  --delay: 0s;
+  --iteration-count: infinite;
+  --min-width: 100%;
+  --pause-on-hover: running;
+  --pause-on-click: running;
+  --width: 100%;
+  --transform: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,8 +30,133 @@
   }
 }
 
+@media (min-width: 768px) {
+  .custom-card-height {
+    height: 240px; /* Chiều cao thay đổi khi màn hình có độ rộng từ 1024px trở lên */
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-card-height {
+    height: 300px; /* Chiều cao thay đổi khi màn hình có độ rộng từ 1024px trở lên */
+  }
+}
+
+@media (min-width: 1060px) {
+  .custom-card-height {
+    height: 250px; /* Chiều cao thay đổi khi màn hình có độ rộng từ 1024px trở lên */
+  }
+}
+
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--foreground);
+}
+
+img {
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.max-w-1500 {
+  max-width: 1500px;
+}
+
+.text-border {
+  --text-border-color: white;
+
+  text-shadow:
+    4px 0 var(--text-border-color),
+    -4px 0 var(--text-border-color),
+    0 4px var(--text-border-color),
+    0 -4px var(--text-border-color),
+    2px 2px var(--text-border-color),
+    -2px -2px var(--text-border-color),
+    2px -2px var(--text-border-color),
+    -2px 2px var(--text-border-color);
+}
+
+.text-black-border {
+  --text-border-color: black; /* Override the color to black */
+}
+
+.text-darkblue-border {
+  --text-border-color: var(--darkblue); /* Override the color to black */
+}
+
+.rfm-marquee-container {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: var(--width);
+  transform: var(--transform);
+}
+.rfm-marquee-container:hover div {
+  animation-play-state: var(--pause-on-hover);
+}
+.rfm-marquee-container:active div {
+  animation-play-state: var(--pause-on-click);
+}
+
+.rfm-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.rfm-overlay::before,
+.rfm-overlay::after {
+  background: linear-gradient(to right, var(--gradient-color), transparent);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: var(--gradient-width);
+  z-index: 2;
+  pointer-events: none;
+  touch-action: none;
+}
+.rfm-overlay::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.rfm-overlay::before {
+  left: 0;
+  top: 0;
+}
+
+.rfm-marquee {
+  flex: 0 0 auto;
+  min-width: var(--min-width);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.rfm-initial-child-container {
+  flex: 0 0 auto;
+  display: flex;
+  min-width: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rfm-child {
+  transform: var(--transform);
 }
