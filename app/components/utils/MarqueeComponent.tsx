@@ -6,7 +6,7 @@ const MarqueeComponent = () => {
           <div className="rfm-initial-child-container">
             {[...Array(50)].map((_, index) => (
               <div className="rfm-child" key={index}>
-                <span className="mr-2 md:mr-5 uppercase text-darkblue">
+                <span className="mr-7 md:mr-11 uppercase text-darkblue">
                   I am going to be the crypto king
                 </span>
               </div>
@@ -16,7 +16,7 @@ const MarqueeComponent = () => {
         <div className="rfm-marquee">
           {[...Array(50)].map((_, index) => (
             <div className="rfm-child" key={index}>
-              <span className="mr-2 md:mr-5 uppercase text-darkblue">
+              <span className="mr-7 md:mr-11 uppercase text-darkblue">
                 I am going to be the crypto king
               </span>
             </div>

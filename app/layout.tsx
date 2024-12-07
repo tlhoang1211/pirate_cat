@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "../app/styles/globals.css";
 
 const happySchoolTtf = localFont({
   src: "../public/assets/fonts/Happy_School.ttf",

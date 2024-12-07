@@ -48,6 +48,155 @@
   }
 }
 
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-appear {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 30% cover 70%;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.loader {
+  position: relative;
+  animation: pulse 5s linear infinite;
+}
+
+.loader,
+.loader:after {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: scaleUp 5s linear infinite;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  60%,
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  to {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce-fast {
+  animation: bounce 0.5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-shine {
+  animation: shine 5s infinite;
+}
+
+.via-white\/10 {
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from),
+    rgb(255 255 255 / 0.2) var(--tw-gradient-via-position),
+    var(--tw-gradient-to);
+}
+
+.blink-bg {
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  animation: blinkingBackground 1s infinite;
+  opacity: 0.2;
+}
+
+@keyframes blinkingBackground {
+  0% {
+    background-color: #10c018;
+  }
+
+  25% {
+    background-color: #1056c0;
+  }
+
+  50% {
+    background-color: #ef0a1a;
+  }
+
+  75% {
+    background-color: #254878;
+  }
+
+  to {
+    background-color: #04a1d5;
+  }
+}
+
+.strobe {
+  animation: strobe 0.1s ease-in-out infinite;
+}
+
+@keyframes strobe {
+  0% {
+    scale: 1;
+    transform-origin: center center;
+  }
+
+  to {
+    scale: 1.02;
+    transform-origin: center center;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--foreground);
@@ -59,6 +208,20 @@ img {
   top: 0;
   right: 0;
   bottom: 0;
+}
+
+.bg-dark-grey {
+  --tw-bg-opacity: 0.3;
+  background-color: rgb(29 29 29 / var(--tw-bg-opacity));
+}
+
+.bg-red {
+  background-color: rgb(237 43 32 / var(--tw-bg-opacity));
+}
+
+.text-red {
+  --tw-text-opacity: 1;
+  color: rgb(237 43 32 / var(--tw-text-opacity));
 }
 
 .max-w-1500 {

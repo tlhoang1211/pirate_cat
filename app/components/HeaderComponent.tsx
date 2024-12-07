@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import headerLogo from "../../public/images/header_logo.png";
 import headerBtn from "../../public/images/header_btn.png";
-import ScrollComponent from "./ScrollComponent";
+import ScrollComponent from "./utils/ScrollComponent";
 import useScrollRestoration from "../hooks/useScrollRestoration";
 
 const HeaderComponent = () => {

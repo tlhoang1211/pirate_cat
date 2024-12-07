@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ting from "../../public/images/tingting.png";
-import h_line from "../../public/images/horizontal_line.png";
+import h_line from "../../public/images/black_horizontal_line.svg";
+import w_h_line from "../../public/images/white_horizontal_line.svg";
 
 const AUComponent = () => {
   return (
@@ -24,17 +25,18 @@ const AUComponent = () => {
           <div className="flex flex-col lg:flex-row md:gap-5 gap-3 w-full relative">
             <div className="flex-1">
               <div className="h-full" style={{ opacity: 1, transform: "none" }}>
-                <div className="bg-[#C5E6FF] border-[9px] border-white rounded-3xl text-center p-6 custom-card-height flex-1 w-full relative overflow-hidden">
-                  <div className="md:text-3xl text-xl text-darkblue pb-[10px] uppercase">
+                <div className="bg-darkblue border-[9px] border-white rounded-3xl text-center p-6 custom-card-height flex-1 w-full relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform rotate-45 opacity-0 animate-shine z-[100]"></div>
+                  <div className="md:text-3xl text-xl text-lightblue pb-[10px] uppercase">
                     Finding the one coin
                   </div>
                   <Image
-                    alt="h_line"
-                    src={h_line}
+                    alt="w_h_line"
+                    src={w_h_line}
                     className="max-w-[300px] mx-auto"
                     unoptimized={true}
                   />
-                  <p className="max-w-[500px] pt-[10px] text-black mx-auto md:text-lg text-sm">
+                  <p className="max-w-[500px] pt-[10px] text-white mx-auto md:text-lg text-sm">
                     PIRATE CAT REPRESENTS THE NEXT WAVE IN THE CRYPTO OCEAN—A
                     DECENTRALIZED EXCHANGE (DEX) BLENDING FUN, TREASURE, AND
                     UNIQUE BENEFITS FOR ITS PIRATE TOKEN HOLDERS.

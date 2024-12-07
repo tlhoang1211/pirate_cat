@@ -14,8 +14,8 @@ const MainPartComponent = () => {
             <div className="absolute size-[200vh] left-1/2 translate-x-[-50%] top-1/2 translate-y-[-45%]">
               <Image
                 fetchPriority="high"
-                priority={true}
-                fill={true}
+                priority
+                fill
                 alt="Main Cover"
                 decoding="async"
                 className="object-contain"
@@ -29,8 +29,8 @@ const MainPartComponent = () => {
             <Image
               alt="Main Logo"
               fetchPriority="high"
-              priority={true}
-              fill={true}
+              priority
+              fill
               data-nimg="fill"
               className="object-contain"
               unoptimized={true}
@@ -57,11 +57,10 @@ const MainPartComponent = () => {
                     <Image
                       alt="tele"
                       fetchPriority="high"
-                      fill={true}
-                      priority={true}
+                      priority
                       decoding="async"
                       data-nimg="fill"
-                      className="bg-black rounded-[10px] absolute h-[100%] w-[100%]"
+                      className="bg-black rounded-[10px]"
                       src={teleLogo}
                     />
                   </div>
@@ -75,12 +74,10 @@ const MainPartComponent = () => {
                     <Image
                       alt="x"
                       fetchPriority="high"
-                      priority={true}
-                      fill={true}
+                      priority
                       decoding="async"
                       data-nimg="fill"
-                      className="bg-black rounded-[10px] absolute h-[100%] w-[100%]"
-                      // sizes="100vw"
+                      className="bg-black rounded-[10px]"
                       src={xLogo}
                     />
                   </div>
