@@ -1,13 +1,10 @@
 import Image from "next/image";
 
-import mainCover from "/public/images/main_cover.png";
-import mainLogo from "/public/images/logo.png";
-import teleLogo from "/public/images/tele.png";
-import xLogo from "/public/images/x.png";
+import cat2 from "/public/images/CAT2.svg";
 
 const TokenomicComponent = () => {
   return (
-    <div className="border-b-4 border-b-black md:pb-32 pb-20 md:px-0 px-5 bg-lightblue">
+    <div className="border-b-4 border-b-black md:pb-32 pb-20 md:px-0 px-5 tokenomic_bg">
       <div className="max-w-1500 mx-auto relative md:pt-24 pt-20">
         <div className="h-full">
           <div className="md:text-[100px] text-[52px] text-center">
@@ -25,26 +22,26 @@ const TokenomicComponent = () => {
         </div>
         <div className="h-full">
           <div className="md:p-20 p-5 pt-10 w-full flex md:flex-row flex-col gap-10 items-center">
-            <div className="relative md:w-1/2 overflow-hidden">
-              <div className="absolute top-0 left-0 bottom-0 bg-transparent blink-bg right-0 z-10"></div>
+            <div className="relative md:w-1/2 md:left-[10%]">
+              <div className="absolute top-0 left-0 bottom-0 blink-bg right-0 z-10 md:rotate-[-5deg]"></div>
               <Image
-                className="object-contain border-4 border-yellow"
-                src=""
-                alt="trading"
+                alt="cat2"
+                priority={true}
+                rel="preload"
+                className="object-contain border-[10px] border-darkblue md:rotate-[-5deg]"
+                src={cat2}
               />
             </div>
             <div className="flex flex-col items-center">
-              {/* <div className="relative md:w-[400px] w-[200px] h-[200px] md:top-[-70px] md:block hidden">
-                <Image
-                  alt="trading"
-                  loading="lazy"
-                  decoding="async"
-                  data-nImage="fill"
-                  className="object-contain strobe"
-                  sizes="100vw"
-                  src=""
-                />
-              </div> */}
+              <div className="relative md:w-[400px] w-[200px] h-[200px] md:top-[-70px] md:block hidden">
+                <div className="md:absolute md:bottom-[-60px] md:mt-0 mt-10 md:left-[50px] z-10">
+                  <a href="#" rel="noopener noreferrer" target="_blank">
+                    <button className="md:text-3xl text-2xl border-4 rounded-[25px] border-black rotate-[5deg] shadow md:px-8 px-6 md:py-2 md:pt-4 py-1 pt-3 tracking-wide transition-all animate-bounce-fast bg-red text-white opacity-100 md:hover:scale-105">
+                      BUY PICAT HERE
+                    </button>
+                  </a>
+                </div>
+              </div>
               <div className="h-full">
                 <div className="flex flex-col md:gap-5 gap-3 relative z-20">
                   <div className="h-full">
@@ -63,19 +60,12 @@ const TokenomicComponent = () => {
                         TOKEN ADDRESS
                       </div>
                       <div className="md:text-lg text-xs md:mt-3 mt-2 break-all">
-                        ABCDEF
+                        ABCDEFABCDEFABCDEFABCDEFABCDEFABCDEFABCDEFABCDEFABCDEFABCDE
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="md:absolute md:bottom-[-60px] md:mt-0 mt-10 md:left-[200px] z-10">
-              <a href="#" rel="noopener noreferrer" target="_blank">
-                <button className="md:text-3xl text-2xl border-4 rounded-[25px] border-black rotate-[5deg] shadow md:px-8 px-6 md:py-2 md:pt-4 py-1 pt-3 tracking-wide transition-all animate-bounce-fast bg-red text-white opacity-100 md:hover:scale-105">
-                  BUY PICAT HERE
-                </button>
-              </a>
             </div>
           </div>
         </div>

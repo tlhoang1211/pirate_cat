@@ -202,6 +202,30 @@ body {
   background: var(--foreground);
 }
 
+.instruction_bg {
+  background: url("../../public/images/instruction_bg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(21 26 76 / var(--tw-bg-opacity, 1));
+}
+
+.tokenomic_bg {
+  background: url("../../public/images/tokenomic_bg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(90 200 255 / var(--tw-bg-opacity, 1));
+}
+
+.footer_bg {
+  background: url("../../public/images/footer_bg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(21 26 76 / var(--tw-bg-opacity, 1));
+}
+
 img {
   width: 100%;
   left: 0;

@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 
-import headerLogo from "../../public/images/header_logo.png";
+import headerLogo from "../../public/images/header_logo.svg";
 import headerBtn from "../../public/images/header_btn.png";
 import ScrollComponent from "./utils/ScrollComponent";
 import useScrollRestoration from "../hooks/useScrollRestoration";
@@ -22,16 +22,14 @@ const HeaderComponent = () => {
         <a href="#">
           <div
             ref={divRef1}
-            className={`relative z-20 md:ml-[-20px] ml-[-5px] transition-all ease-in-out md:w-[270px] md:h-[50px] w-[170px] h-[20px]`}
+            className={`relative z-20 md:ml-[-20px] ml-[-5px] transition-all ease-in-out md:w-[270px] md:h-[30px] w-[170px] h-[5px]`}
           >
             <Image
-              fetchPriority="high"
-              data-nimg="fill"
-              decoding="async"
+              alt="Header Logo"
+              priority={true}
+              rel="preload"
               src={headerLogo}
-              alt="Logo"
-              className="object-contain"
-              unoptimized={true}
+              className="object-contain mt-[-30px]"
             />
           </div>
         </a>

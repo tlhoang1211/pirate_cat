@@ -1,39 +1,33 @@
 import Image from "next/image";
 
-import mainCover from "/public/images/main_cover.png";
-import mainLogo from "/public/images/logo.png";
-import teleLogo from "/public/images/tele.png";
-import xLogo from "/public/images/x.png";
+import mainCover from "/public/images/rays.svg";
+import mainLogo from "/public/images/logo.svg";
+import teleLogo from "/public/images/tele.svg";
+import xLogo from "/public/images/x.svg";
 
 const MainPartComponent = () => {
   return (
-    <div className="relative overflow-hidden">
+    <div className="bg-lightblue relative overflow-hidden">
       <div className="relative p-5 md:px-14 min-h-screen max-w-[2000px] mx-auto pt-[100px]">
         <div className="text-black relative flex justify-center items-center flex-col md:pt-0 pt-[10px] z-10">
           <div className="relative md:size-[58vh] size-[50vh] z-20">
             <div className="absolute size-[200vh] left-1/2 translate-x-[-50%] top-1/2 translate-y-[-45%]">
               <Image
-                fetchPriority="high"
-                priority
-                fill
+                rel="preload"
+                priority={true}
+                fill={true}
                 alt="Main Cover"
-                decoding="async"
                 className="object-contain"
                 src={mainCover}
-                unoptimized={true}
-                style={{
-                  top: -35,
-                }}
+                style={{ top: "-40px" }}
               />
             </div>
             <Image
               alt="Main Logo"
-              fetchPriority="high"
-              priority
-              fill
-              data-nimg="fill"
+              rel="preload"
+              priority={true}
+              fill={true}
               className="object-contain"
-              unoptimized={true}
               src={mainLogo}
             />
           </div>
@@ -56,11 +50,9 @@ const MainPartComponent = () => {
                   <div className="relative md:size-11 size-10 md:hover:scale-105">
                     <Image
                       alt="tele"
-                      fetchPriority="high"
-                      priority
-                      decoding="async"
-                      data-nimg="fill"
-                      className="bg-black rounded-[10px]"
+                      priority={true}
+                      rel="preload"
+                      className="bg-white rounded-[10px]"
                       src={teleLogo}
                     />
                   </div>
@@ -73,11 +65,9 @@ const MainPartComponent = () => {
                   <div className="relative md:size-11 size-10 md:hover:scale-105">
                     <Image
                       alt="x"
-                      fetchPriority="high"
-                      priority
-                      decoding="async"
-                      data-nimg="fill"
-                      className="bg-black rounded-[10px]"
+                      priority={true}
+                      rel="preload"
+                      className="bg-white rounded-[10px]"
                       src={xLogo}
                     />
                   </div>
