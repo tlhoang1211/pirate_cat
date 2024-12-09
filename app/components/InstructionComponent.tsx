@@ -11,14 +11,14 @@ const InstructionComponent = () => {
       <div className="max-w-1500 mx-auto relative md:pt-24 pt-20 ">
         <div className="h-full">
           <div className="md:text-[100px] text-[52px] text-center ">
-            <h1 className="text-lightblue md:leading-normal leading-[60px]">
+            <h1 className="text-lightblue md:leading-normal leading-[60px] text-border text-black-border">
               HOW TO BUY
             </h1>
           </div>
         </div>
         <div className="h-full">
           <div className="text-center mb-5 md:text-3xl text-xl max-w-[600px] mx-auto text-white">
-            <p className="md:leading-[45px]">
+            <p className="md:leading-[45px] text-border text-black-border">
               Follow these easy steps to become a $PICAT holder.
             </p>
           </div>

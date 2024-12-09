@@ -15,8 +15,8 @@ const TokenomicComponent = () => {
           <div className="text-center mb-5 md:text-3xl text-lg max-w-[340px] md:mt-0 mt-2 md:max-w-[700px] mx-auto text-white">
             <p className="">
               YOU WANT MY TREASURE? YOU CAN HAVE IT! I LEFT
-              <strong className="text-red"> *987*</strong> TOKENS I GARTHERED
-              TOGETHER IN ONE PLACE, NOW YOU JUST HAVE TO FIND IT
+              <strong className="text-[#D5441C]"> *1B*</strong> TOKENS I
+              GARTHERED TOGETHER IN ONE PLACE, NOW YOU JUST HAVE TO FIND IT
             </p>
           </div>
         </div>
@@ -50,7 +50,7 @@ const TokenomicComponent = () => {
                         TOTAL SUPPLY
                       </div>
                       <div className="md:text-xl md:mt-3 mt-2 break-all">
-                        555,555,555 $PICAT
+                        1,000,000,000 $PICAT
                       </div>
                     </div>
                   </div>
