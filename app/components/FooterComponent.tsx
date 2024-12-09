@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import cat3 from "@/public/images/CAT3.svg";
+import cat3 from "@/public/images/Gif.gif";
 import xLogo from "@/public/images/x.svg";
 import teleLogo from "@/public/images/tele.svg";
 
@@ -67,9 +67,10 @@ const FooterComponent = () => {
                 rel="preload"
                 className="object-contain"
                 src={cat3}
+                unoptimized={true}
                 style={{
                   height: "100%",
-                  width: "94%",
+                  width: "100%",
                 }}
               />
             </div>
