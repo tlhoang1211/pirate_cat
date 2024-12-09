@@ -1,7 +1,7 @@
 import Image from "next/image";
-import ting from "../../public/images/tingting.png";
-import h_line from "../../public/images/black_horizontal_line.svg";
-import w_h_line from "../../public/images/white_horizontal_line.svg";
+import ting from "@/public/images/tingting.png";
+import h_line from "@/public/images/black_horizontal_line.svg";
+import w_h_line from "@/public/images/white_horizontal_line.svg";
 
 const AUComponent = () => {
   return (

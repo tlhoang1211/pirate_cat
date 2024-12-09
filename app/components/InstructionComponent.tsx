@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import cat1 from "/public/images/CAT1.svg";
+import cat1 from "@/public/images/CAT1.svg";
 
 const InstructionComponent = () => {
   return (

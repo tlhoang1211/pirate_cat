@@ -1,21 +1,21 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import revolut from "../../public/images/exchanges/revolut.png";
-import kucoin from "../../public/images/exchanges/kucoin.svg";
-import kraken from "../../public/images/exchanges/kraken.webp";
-import bybit from "../../public/images/exchanges/bybit.svg";
-import binance_futures from "../../public/images/exchanges/binance_futures.png";
-import crypto from "../../public/images/exchanges/cdc.svg";
-import okx from "../../public/images/exchanges/okx-dex.svg";
-import gate from "../../public/images/exchanges/gate.png";
-import htx from "../../public/images/exchanges/htx.svg";
-import bitget from "../../public/images/exchanges/bitget.svg";
-import woox from "../../public/images/exchanges/woox.webp";
-import poloniex from "../../public/images/exchanges/poloniex.svg";
-import bitmart from "../../public/images/exchanges/bitmart.svg";
-import bitrue from "../../public/images/exchanges/bitrue.png";
-import mexc from "../../public/images/exchanges/mexc.svg";
+import revolut from "@/public/images/exchanges/revolut.png";
+import kucoin from "@/public/images/exchanges/kucoin.svg";
+import kraken from "@/public/images/exchanges/kraken.webp";
+import bybit from "@/public/images/exchanges/bybit.svg";
+import binance_futures from "@/public/images/exchanges/binance_futures.png";
+import crypto from "@/public/images/exchanges/cdc.svg";
+import okx from "@/public/images/exchanges/okx-dex.svg";
+import gate from "@/public/images/exchanges/gate.png";
+import htx from "@/public/images/exchanges/htx.svg";
+import bitget from "@/public/images/exchanges/bitget.svg";
+import woox from "@/public/images/exchanges/woox.webp";
+import poloniex from "@/public/images/exchanges/poloniex.svg";
+import bitmart from "@/public/images/exchanges/bitmart.svg";
+import bitrue from "@/public/images/exchanges/bitrue.png";
+import mexc from "@/public/images/exchanges/mexc.svg";
 // import { Reveal } from "./utils/RevealComponent";
 
 const gridContainerVariants = {

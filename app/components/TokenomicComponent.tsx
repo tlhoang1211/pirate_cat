@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import cat2 from "/public/images/CAT2.svg";
+import cat2 from "@/public/images/CAT2.svg";
 
 const TokenomicComponent = () => {
   return (
@@ -33,10 +33,10 @@ const TokenomicComponent = () => {
               />
             </div>
             <div className="flex flex-col items-center">
-              <div className="relative md:w-[400px] w-[200px] h-[200px] md:top-[-70px] md:block hidden">
-                <div className="md:absolute md:bottom-[-60px] md:mt-0 mt-10 md:left-[50px] z-10">
+              <div className="relative md:w-[400px] md:h-[200px] h-[100px] md:top-[-70px] md:block">
+                <div className="md:absolute md:bottom-[-60px] md:mt-0 mt-8 md:left-[50px] z-10">
                   <a href="#" rel="noopener noreferrer" target="_blank">
-                    <button className="md:text-3xl text-2xl border-4 rounded-[25px] border-black rotate-[5deg] shadow md:px-8 px-6 md:py-2 md:pt-4 py-1 pt-3 tracking-wide transition-all animate-bounce-fast bg-red text-white opacity-100 md:hover:scale-105">
+                    <button className="md:text-3xl text-2xl border-4 rounded-[25px] border-black rotate-[5deg] shadow md:px-8 px-6 md:py-2 md:pt-4 py-1 pt-3 tracking-wide transition-all animate-bounce-fast bg-red text-white opacity-100">
                       BUY PICAT HERE
                     </button>
                   </a>

@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import mainCover from "/public/images/rays.svg";
-import mainLogo from "/public/images/logo.svg";
-import teleLogo from "/public/images/tele.svg";
-import xLogo from "/public/images/x.svg";
+import mainCover from "@/public/images/rays.svg";
+import mainLogo from "@/public/images/logo.svg";
+import teleLogo from "@/public/images/tele.svg";
+import xLogo from "@/public/images/x.svg";
 
 const MainPartComponent = () => {
   return (

@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import cat3 from "/public/images/CAT3.svg";
-import xLogo from "/public/images/x.svg";
-import teleLogo from "/public/images/tele.svg";
+import cat3 from "@/public/images/CAT3.svg";
+import xLogo from "@/public/images/x.svg";
+import teleLogo from "@/public/images/tele.svg";
 
 const FooterComponent = () => {
   return (

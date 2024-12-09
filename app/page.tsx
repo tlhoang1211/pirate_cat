@@ -1,13 +1,13 @@
 "use client";
 
-import HeaderComponent from "./components/HeaderComponent";
-import MainPartComponent from "./components/MainPartComponent";
-import MarqueeComponent from "./components/utils/MarqueeComponent";
-import ExchangesComponent from "./components/ExchangesComponent.jsx";
-import AUComponent from "./components/AUComponent";
-import InstructionComponent from "./components/InstructionComponent";
-import TokenomicComponent from "./components/TokenomicComponent";
-import FooterComponent from "./components/FooterComponent";
+import HeaderComponent from "@/app/components/HeaderComponent";
+import MainPartComponent from "@/app/components/MainPartComponent";
+import MarqueeComponent from "@/app/components/utils/MarqueeComponent";
+import ExchangesComponent from "@/app/components/ExchangesComponent.jsx";
+import AUComponent from "@/app/components/AUComponent";
+import InstructionComponent from "@/app/components/InstructionComponent";
+import TokenomicComponent from "@/app/components/TokenomicComponent";
+import FooterComponent from "@/app/components/FooterComponent";
 
 export default function Home() {
   return (
