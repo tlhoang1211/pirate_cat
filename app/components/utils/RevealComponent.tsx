@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface Props {
   children: JSX.Element;

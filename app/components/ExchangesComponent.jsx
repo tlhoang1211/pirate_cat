@@ -16,7 +16,7 @@ import poloniex from "../../public/images/exchanges/poloniex.svg";
 import bitmart from "../../public/images/exchanges/bitmart.svg";
 import bitrue from "../../public/images/exchanges/bitrue.png";
 import mexc from "../../public/images/exchanges/mexc.svg";
-import { Reveal } from "./utils/RevealComponent";
+// import { Reveal } from "./utils/RevealComponent";
 
 const gridContainerVariants = {
   hidden: { opacity: 0 },

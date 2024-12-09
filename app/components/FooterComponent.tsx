@@ -26,7 +26,7 @@ const FooterComponent = () => {
             </div>
           </div>
         </div>
-        <div className="flex md:gap-6 gap-3 justify-center md:pt-20 pt-10 z-[100] relative">
+        <div className="flex md:gap-6 gap-3 justify-center md:pt-20 md:pb-20 pb-0 pt-10 z-[100] relative">
           <div className="relative md:size-16 w-12 h-12 rounded-[15px]">
             <a
               rel="noopener noreferrer"
@@ -58,9 +58,9 @@ const FooterComponent = () => {
             </a>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col-reverse justify-center items-center md:mt-[-140px] mt-12">
-          <div>
-            <div className="relative md:w-[700px] md:h-[700px] w-[250px] h-[250px] md:left-[-100px]">
+        <div className="flex md:flex-row flex-col-reverse justify-center items-center md:-mt-32 md:px-28">
+          <div className="md:w-1/2">
+            <div className="relative lg:w-[700px] lg:h-[700px] md:w-[350px] md:h-[355px] sm: lg:left-[-80px] ml-auto">
               <Image
                 alt="head"
                 priority={true}
@@ -74,17 +74,13 @@ const FooterComponent = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col justify-end md:h-[300px] md:mt-20">
-            <a
-              href="https://www.ponkeswap.xyz/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <button className="text-darkblue md:text-3xl text-2xl bg-white border-4 rounded-0 border-lightblue rotate-[5deg] shadow md:px-8 px-6 md:py-2 md:pt-4 py-1 pt-3 tracking-wide transition-all strobe md:rotate-[-10deg] opacity-100 md:hover:scale-105">
+          <div className="flex flex-col w-1/2 lg:h-[300px] lg:mt-0 md:mt-20 m-10 lg:pt-60 justify-center items-center">
+            <a href="" rel="noopener noreferrer" target="_blank">
+              <button className="lg:text-3xl md:text-2xl sm:text-3xl text-darkblue bg-white border-4 rounded-0 border-lightblue rotate-[5deg] shadow md:px-8 px-6 md:py-2 md:pt-4 py-1 pt-3 tracking-wide transition-all strobe md:rotate-[-10deg] opacity-100 md:hover:scale-105">
                 CLICK TO FIND THE ONE COIN
               </button>
             </a>
-            <div className="relative md:w-[300px] md:h-[90px] mt-10 z-20 md:block hidden md:text-8xl text-4xl md:rotate-[10deg] md:ml-[200px] ml-[100px]">
+            <div className="relative md:w-[300px] md:h-[90px] mt-10 z-20 md:block hidden md:text-2xl lg:text-8xl md:text-4xl md:rotate-[10deg] md:ml-[200px] ml-[100px]">
               <p className="">$PICAT</p>
             </div>
           </div>
